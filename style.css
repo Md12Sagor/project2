@@ -1,35 +1,63 @@
 body {
-    font-family: 'Prompt', sans-serif;
+    /* font-family: 'Prompt', sans-serif;
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear; */
 
+
+}
+
+
+:root {
+    /* --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: 2rem solid rgba(0, 0, 0, .1);
+    --outline: 1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: 2rem solid var(--blak); */
+    --box-shadow: 6px -6px 11px 0px rgba(255, 228, 225, 0.34);
+    border: 1px solid rgba(255, 228, 225, 0.7);
+
+    --outline: 1px solid rgba(0, 0, 0, .1);
 }
 
 .banner {
     background-image: url(images/donation7.jpg);
-    background-size: cover;
     background-position: center;
-    height: 100vh;
-}
-
-.header {
+    background-size: cover;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+
+
+}
+
+.banner header {
+    text-align: center;
+    width: 60rem;
+}
+
+.banner .header h3 {
     color: white;
-    padding-top: 190px;
-}
-
-.header h1 {
-    font-size: 250%;
-    left: 21.7%;
-    top: 4.14%;
-}
-
-
-.header p {
-    font-size: 70%;
-
+    font-size: 3rem;
 
 }
+
+.banner .header p {
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 0;
+    line-height: 1.1;
+
+}
+
 
 .header-btn {
     text-decoration: none;
@@ -45,6 +73,7 @@ body {
 .flexible-container {
     display: flex;
     margin-bottom: 150px;
+
 }
 
 
@@ -58,21 +87,62 @@ body {
 }
 
 .experiences-item {
-    width: 10%;
-    margin-left: 5%;
-    margin-right: 2%;
-    padding-left: 5px;
-    box-shadow: 3px 3px 3px #FAFAFA;
+    width: 56%;
+    margin-left: 10%;
+    margin-right: 6%;
+    padding-left: 3px;
+    box-shadow: 10px 10px lightblue;
+
+
+
 }
 
 .experiences-item h3 {
     text-align: center;
+
 }
 
 .donate-today {
     box-shadow: 0px 2px 0px 0px rgb(185, 152, 152);
+}
+
+.experiences-item:nth-child(2),
+.experiences-item:nth-child(2)::before {
+    background: linear-gradient(135deg, #FFF4D6);
 
 }
+
+.experiences-item {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.experiences-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: ;
+}
+
+
+
+
+
+.experiences-item:nth-child(2),
+.experiences-item:nth-child(2) ::before {
+    background: #FFC9C9;
+}
+
+
 
 #other {
     text-align: center;
@@ -99,10 +169,84 @@ body {
 }
 
 #sa {
-    width: 10%;
+    /* width: 5%;
     margin-left: 5%;
     margin-right: 2%;
     padding-left: 5px;
     color: #f51010;
-    box-shadow: 3px 3px 3px 3px #f51010;
+    box-shadow: 3px 3px 3px 3px #f51010; */
+
+    width: 300px;
+    height: 200px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px solid blue;
+}
+
+#plan {
+    text-align: center;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.half-width {
+    width: 50%;
+    padding-left: 2%;
+
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 2rem;
+    font-size: 3.5rem;
+
+}
+
+
+.features .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.features .box-container .box {
+    padding: 1rem 1rem 1rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: left;
+    box-shadow: 2px solid #EDF5F6;
+
+}
+
+.box:nth-child(1),
+.box:nth-child(1)::before {
+    background: #EDF5F6;
+}
+
+
+.box:nth-child(2),
+.box:nth-child(2)::before {
+    background: #FFEEEE;
+}
+
+.box:nth-child(3),
+.box:nth-child(3)::before {
+    background: #FFF4D6;
+}
+
+
+
+
+
+
+
+
+.half-width img {
+    width: 500px;
+
 }
